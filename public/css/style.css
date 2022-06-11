@@ -1,0 +1,362 @@
+.container {
+
+    max-width: 1100px;
+    margin: 0px auto;
+}
+.header {
+    background-color: #181818;
+    padding: 13px;
+    position: fixed;
+    width: 100%;
+}
+.header-menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.header-menu {
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    padding-left: 230px;
+}
+.header-icon {
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
+.header-icon-text {
+    fill: rgb(255, 255, 255);
+}
+
+.a-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding: 5px 0px;
+}
+/* .a-menu::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+.a-menu:hover::after {
+    transform: scaleX(1);
+} */
+.a-menu::after {
+    content:  "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s;
+}
+.a-menu:hover::after {
+    width: 100%;
+}
+.button {
+    text-align: center;
+    padding-top: 13px;
+}
+.button-text {
+    background-color: #181818; 
+    border: none;
+    margin: 4px 2px;
+}
+.button-search {
+    background-color: #181818; 
+    border: none;
+    margin: 4px 2px;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+.modelsnew {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: block;
+    padding: 5px 0px;
+}
+.modelsnew::after {
+    content:  "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s;
+}
+.modelsnew:hover::after {
+    width: 100%;
+}
+.footer {
+    background: #181818;
+    color:rgb(255, 255, 255);
+    padding-top: 60px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.footer-top a{
+    color: white;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 17px;
+    /* font-weight: 510; */
+}
+.footer-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding: 3px 0px;
+    margin-bottom: 10px;
+}
+.footer-menu::after {
+    content:  "";
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s;
+}
+.footer-menu:hover::after {
+    width: 100%;
+}
+.button-footer {
+    margin: 10px;
+}
+.social-network {
+    text-align: right;
+}
+.footer-icon {
+    text-decoration: none;
+    color: white;
+}
+
+.img-home {
+    width: fit-content;
+}
+
+.primary_main {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-shadow: 0px 0px 2px black;
+    color: white;
+    font-size: 100px;
+    font-weight: 600;
+    letter-spacing: -5px;
+    animation: moveInLeft 2s ease-out;
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.textO {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-shadow: 0px 0px 1px black;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    animation: animationO 3s ease-out;
+}
+@keyframes animationO {
+    0% {
+        opacity: 0;
+        transform: translate(-5px, 0);
+    }
+
+    40% {
+        opacity: 2;
+        transform: translate(0, 0);
+    }
+}
+.icon-huracan {
+    color: white;
+    background: none;
+    animation-name: Huracan;
+    animation-duration: 3s;
+}
+@keyframes Huracan {
+    0% {
+        opacity: 0;
+        transform: translate(-1624 -187.923);
+        width: 0px;
+        height: 0px;
+    }
+
+    90% {
+        opacity: 2;
+        transform: translate(1623.5 187.345);
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.img-custom {
+    background: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/homepage/slider/05_23_22/huracan_tecnica.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.img-urus {
+    background: url(https://cdn.discordapp.com/attachments/686586768463888394/981089890169151508/Layer_1.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.img-aventador {
+    background: url(https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/homepage/slider/05_23_22/aventador_ultimae_rds.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* --------------------------------- */
+
+/* .slidershow{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -999;
+}
+
+
+.navigation{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+
+.bar{
+	width: 50px;
+	height: 2px;
+	border:2px solid rgb(0, 0, 0);
+	margin: 10px;
+	cursor: pointer;
+}
+
+.bar:hover{
+	background: #fff;
+	transition: 0.6s;
+	border:2px solid red;
+}
+
+input[name="bottom"]{
+	position: absolute;
+	visibility: hidden;
+}
+
+
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+
+.slide{
+	width: 20%;
+	transition: 0.6s;
+}
+
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+
+#bottom_1:checked ~ .s1{
+	margin-left: 0;
+}
+#bottom_2:checked ~ .s1{
+	margin-left: -20%;
+}
+#bottom_3:checked ~ .s1{
+	margin-left: -40%;
+} */
+.danh-muc {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.header-danh-muc {
+    padding-bottom: 50px;
+}
+.img-1 {
+    text-align: right;
+}
+.text-1 {
+    text-align: left;
+}
+.URUS-bt {
+    border: none;
+}
+.URUS-bt:hover {
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+}
+.read-more {
+    font-size: 17px;
+    font-weight:400;
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    background: none;
+    border-color: rgb(156, 156, 156);
+}
+.read-more:hover {
+    background-color: #181818;
+    color: white;
+    transition: 0.5s;
+    border-width: none;
+}
+.danh-muc-1 {
+    padding-top: 50px;
+}
+.read-all {
+    color: white;
+    font-size: 17px;
+    font-weight:400;
+    width: 200px;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    background: none;
+    background-color: #181818;
+}
+.read-all:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+.icon-huracan:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
